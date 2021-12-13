@@ -49,6 +49,8 @@ class fileFinder {
 				continue;
 			}
 
+			$file = str_replace([X1_PATH,X1_APP_PATH],["'.X1_PATH.'","'.X1_APP_PATH.'"],$file);
+
 			//echo "$file\n=========================\n\n".print_r($d,1)."\n";
 
 			for ($i = 0; $i < count($d['classes']); $i++) {
