@@ -72,7 +72,7 @@ class EventManager {
 	}
 
 	public function ObserveEvent($event, $obj, $options = false) {
-		\modules\ChromePHP\libs\Logger::log($event);
+		//\modules\ChromePHP\libs\Logger::log($event);
 
 		$this->events[] = [(microtime(true) * 1000000) => [$event,get_class($obj),$options]];
 
